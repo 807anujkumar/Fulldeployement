@@ -1,0 +1,152 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.mainconatiner{
+  display: flex;
+  flex-direction: column;
+ row-gap: 10px;
+
+  
+}
+.minicontainer{
+display: flex;
+  flex-direction:row;
+ column-gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+.minicontainer input {
+ width: 45%;
+  padding: 4px;
+  font-size: 14px;
+  border: 1px solid #ff02dd;
+  border-radius: 4px;
+  outline: none;
+}
+  textarea {
+ width: 45%;
+  padding: 4px;
+  font-size: 14px;
+  border: 1px solid #ff02dd;
+  border-radius: 4px;
+  outline: none;
+}
+.minicontainer button {
+ width: 15%;
+  padding: 6px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+.minicontainer button:hover{
+   background-color: #0e8101;
+}
+.btmtextarea{
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+.btmtextarea button {
+  width: 10%;
+  padding: 6px;
+  font-size: 14px;
+  background-color: #ff00cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.mainconatiner h1{
+  color: rgb(3, 0, 0);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  margin-top: -20px;
+  padding: 5px;
+}
+
+.btmtextarea button:hover {
+  background-color: #b006ff;
+}
+table {
+      border-collapse: collapse;
+      width: 100%;
+      background: white;
+      box-shadow: 0 4px 10px rgba(255, 2, 2, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #d000ff;
+      text-align: center;
+    }
+    thead tr,th {
+      background: #05cdff;
+      color: rgb(255, 255, 255);
+         border: 2px solid #f504c1;
+         text-align: center;
+    }
+    tbody tr td{
+         border: 1px solid #000000;
+    }
+    th, td {
+      padding: 8px 8px;
+      text-align: left;
+      cursor: pointer;
+      text-align: center;
+    }
+    tr:nth-child(even) {
+      background: #f5d8e0;
+    }
+    tr:hover {
+      background: #dcedff;
+      transition: 0.3s;
+    }
+    th.sortable:hover {
+      background: #0056b3;
+    }
+   
