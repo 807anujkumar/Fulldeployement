@@ -691,7 +691,7 @@ const PO_LIST = [
       sendLog('ℹ️ Security question not shown.');
     }
 
-    await driver.sleep(4000);
+   await driver.sleep(4000);
 
     // 2. Open each PO in separate tab and generate CI
     for (let i = 0; i < strings.length; i++) {  
@@ -758,7 +758,7 @@ if (!clicked) {
 // 3. Function to check status & create version
 const completedPOs = new Set();
 const completedversion = new Set();
-const MAX_ATTEMPTS = 6;
+const MAX_ATTEMPTS = 7;
 
 // Function: Check status and create version if success
 async function checkAndVersionPO(po) {
@@ -972,7 +972,7 @@ try {
 
     if (attempt < MAX_ATTEMPTS) {
       sendLog(`⌛ Waiting 6 min before next attempt...`);
-      await driver.sleep(6 * 60 * 1000);
+      await driver.sleep(5 * 60 * 1000);
     }
   }
  await driver.sleep(30000);
@@ -1070,7 +1070,7 @@ for (let attempt = 1; attempt <= maxChecks; attempt++) {
         sendLog(`❌ [${po}] Failed to get time text after ${maxRetries} attempts`);
         continue;
       }
-
+      
       sendLog("⏱ Time text:", timeText);
       const match = timeText.match(/(\d+)\s*minutes?\s*ago|(\d+)\s*hours?\s*ago|an hour ago|(\d+)\s*days?\s*ago|about a day ago/i);;
       sendLog("⏱ Time match:", match);
